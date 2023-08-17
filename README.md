@@ -1,7 +1,24 @@
+
+
 # Text-to-SQL demo using Vertex AI's Codey APIs. 
 The Vertex AI PaLM API contains the publisher endpoints for Google's Pathways Language Model 2 (PaLM 2), which are large language models (LLMs) that generate text and code in response to natural language prompts. The Codey APIs include three models that generate code, suggest code for code completion, and let developers chat to get help with code-related questions.
 
-## Section 1: Loading example dataset into database
+## Setup
+Create a config.py in the config folder with the following environment variables.
+openai_api_key = "" API key from OpenAI
+service_account = "" #Cloud SQL service account
+database_version="MYSQL_8_0" 
+cpu=2
+memory="8GB"
+storage_size="10GB"
+db_user = ""
+db_name = ""
+bucket = "gs://" # bucket for storing MySQL dump file
+project_id=""
+region=""
+instance_name="" # Instance name
+
+## Section 1: Loading example dataset into database - mysql-database-setup.ipynb
 1. Download MySQL dump file from [MySQL Public Tutorial](https://www.mysqltutorial.org/mysql-sample-database.aspx)
 2. Create Cloud Storage bucket and Cloud SQL MySQL instance
 3. Import MySQL dump file into Cloud SQL instance
