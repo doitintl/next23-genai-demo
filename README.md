@@ -5,18 +5,18 @@ The Vertex AI PaLM API contains the publisher endpoints for Google's Pathways La
 
 ## Setup
 Create a config.py in the config folder with the following environment variables.
-openai_api_key = "" API key from OpenAI
-service_account = "" #Cloud SQL service account
-database_version="MYSQL_8_0" 
-cpu=2
-memory="8GB"
-storage_size="10GB"
-db_user = ""
-db_name = ""
-bucket = "gs://" # bucket for storing MySQL dump file
-project_id=""
-region=""
-instance_name="" # Instance name
+openai_api_key = "" API key from OpenAI \
+service_account = "" #Cloud SQL service account \
+database_version="MYSQL_8_0" \
+cpu=2 \
+memory="8GB" \
+storage_size="10GB" \
+db_user = "" \
+db_name = "" \
+bucket = "gs://" # bucket for storing MySQL dump file \
+project_id="" \
+region="" \
+instance_name="" # Instance name \
 
 ## Section 1: Loading example dataset into database - mysql-database-setup.ipynb
 1. Download MySQL dump file from [MySQL Public Tutorial](https://www.mysqltutorial.org/mysql-sample-database.aspx)
