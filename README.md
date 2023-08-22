@@ -4,7 +4,7 @@
 The Vertex AI PaLM API contains the publisher endpoints for Google's Pathways Language Model 2 (PaLM 2), which are large language models (LLMs) that generate text and code in response to natural language prompts. The Codey APIs include three models that generate code, suggest code for code completion, and let developers chat to get help with code-related questions.
 
 ## Setup
-Create a config.py in the config folder with the following environment variables: \
+Create a ```config.py``` in the config folder with the following environment variables: \
 openai_api_key = "" API key from OpenAI \
 service_account = "" #Cloud SQL service account \
 database_version="MYSQL_8_0" \
@@ -18,15 +18,15 @@ project_id="" \
 region="" \
 instance_name="" # Instance name \
 
-## Setup: Loading example dataset into database - \
-Use the ```mysql-database-setup.ipynb``` notebook to set up the database environment with config options above. This notebook does the following: \
+## Loading example dataset into database -
+Use the ```mysql-database-setup.ipynb``` notebook to set up the database environment with config options above. This notebook does the following:
 1. Download MySQL dump file from [MySQL Public Tutorial](https://www.mysqltutorial.org/mysql-sample-database.aspx)
 2. Create Cloud Storage bucket and Cloud SQL MySQL instance
 3. Import MySQL dump file into Cloud SQL instance
 
 ### Database Schema
 This is a very common example relational structure for a retail company
-![alt text](MySQL-Sample-Database-Schema.png "Title")
+![alt text](images/MySQL-Sample-Database-Schema.png "Title")
 
 ## ```vertex-codey-text-to-sql.ipynb```: Use Text-to-SQL Generative AI to get questions/answers from our database.
 Vertex AI includes a suite of models that work with code. Together these code models are referred to as the Vertex AI Codey APIs. The Vertex AI Codey APIs include the following:
@@ -38,7 +38,7 @@ Vertex AI includes a suite of models that work with code. Together these code mo
 * The **code completion** API - Provides code autocompletion suggestions as you write code. The API uses the context of the code you're writing to make its suggestions. The code completion API supports the ```code-gecko``` model. Use the ```code-gecko``` model to help improve the speed and accuracy of writing code. For more information about the ```code-gecko``` model, see [Code completion model parameters](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models#code-completion-prompt-parameters).
 
 
-![alt text](codey-table.png "Title")
+![alt text](images/codey-table.png "Title")
 
 ## ```langchain-sql.ipynb```: Integrate LangChain with Vertex cide-bison model to build an end-to-end application. 
 LangChain is a framework for developing applications powered by language models. It enables applications that are:
