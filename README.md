@@ -28,7 +28,7 @@ Use the ```mysql-database-setup.ipynb``` notebook to set up the database environ
 This is a very common example relational structure for a retail company
 ![alt text](images/MySQL-Sample-Database-Schema.png "Title")
 
-## ```vertex-codey-text-to-sql.ipynb```: Use Text-to-SQL Generative AI to get questions/answers from our database.
+## ```vertex-code-bison-text-to-sql.ipynb```: Use Text-to-SQL Generative AI to get questions/answers from our database.
 Vertex AI includes a suite of models that work with code. Together these code models are referred to as the Vertex AI Codey APIs. The Vertex AI Codey APIs include the following:
 
 * The **code generation** API - Generates code based on a natural language description of the desired code. For example, it can generate a unit test for a function. The code generation API supports the ```code-bison``` model. For more information about the ```code-bison``` model, see [Code generation model parameters](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models#code-generation-prompt-parameters).
@@ -40,7 +40,7 @@ Vertex AI includes a suite of models that work with code. Together these code mo
 
 ![alt text](images/codey-table.png "Title")
 
-## ```langchain-sql.ipynb```: Integrate LangChain with Vertex cide-bison model to build an end-to-end application. 
+## ```langchain-sql-agent.ipynb```: Integrate LangChain with Vertex cide-bison model to build an end-to-end application. 
 LangChain is a framework for developing applications powered by language models. It enables applications that are:
 * Data-aware: connect a language model to other sources of data
 * Agentic: allow a language model to interact with its environment
